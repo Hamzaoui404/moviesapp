@@ -6,7 +6,7 @@ import './movie-grid.scss';
 import MovieCard from '../movie-card/MovieCard';
 import Button, { OutlineButton } from '../button/Button';
 import Input from '../input/Input'
-
+import {FaSearch} from 'react-icons/fa'
 import tmdbApi, { category, movieType, tvType } from '../../api/tmdbApi';
 
 const MovieGrid = props => {
@@ -123,7 +123,7 @@ const MovieSearch = props => {
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
             />
-            <Button className="small" onClick={goToSearch}>Search</Button>
+            <Button className="small" onClick={goToSearch}><FaSearch/></Button>
         </div>
     )
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 
-import './footer.scss';
-
 import { Link } from 'react-router-dom';
-
+import './footer.css'
 import bg from '../../assets/footer-bg.jpg';
 import logo from '../../assets/tmovie.png';
 
@@ -14,30 +12,41 @@ const Footer = () => {
                 <div className="footer__content__logo">
                     <div className="logo">
                         <img src={logo} alt="" />
-                        <Link to="/">tMovies</Link>
+                        <Link to="/">World Movies</Link>
+                    </div>
+                    <div className="Footer_link_container">
+                    <div className='Footer_list'>
+                        <a href="">Recent Watch</a>
+                        <a href="">FAQ</a>
+                        <a href="">Help Center</a>
+                       <a href="">Privacy</a>
+                       
+                    </div>
+                    <div className='Footer_list'>
+                        <a href="">Terms of Use</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Media Center</a>
+                       <a href="">Ways to Watch</a>
+                       
+                    </div>
+                    <div className='Footer_list'>
+                        <a href="">Cookie Preferences</a>
+                        <a href="">Legal Notices</a>
+                       
+                    </div>
+                    <div className="container">
+	<div className="container__item">
+		<form className="form">
+			<input type="email" className="form__field" placeholder="Your E-Mail Address" />
+			<button type="button" className="btn btn--primary btn--inside uppercase">Send</button>
+		</form>
+	</div>
+
                     </div>
                 </div>
-                <div className="footer__content__menus">
-                    <div className="footer__content__menu">
-                        <Link to="/">Home</Link>
-                        <Link to="/">Contact us</Link>
-                        <Link to="/">Term of services</Link>
-                        <Link to="/">About us</Link>
-                    </div>
-                    <div className="footer__content__menu">
-                        <Link to="/">Live</Link>
-                        <Link to="/">FAQ</Link>
-                        <Link to="/">Premium</Link>
-                        <Link to="/">Pravacy policy</Link>
-                    </div>
-                    <div className="footer__content__menu">
-                        <Link to="/">You must watch</Link>
-                        <Link to="/">Recent release</Link>
-                        <Link to="/">Top IMDB</Link>
-                    </div>
                 </div>
             </div>
-        </div>
+            </div>
     );
 }
 

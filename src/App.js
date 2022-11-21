@@ -8,18 +8,20 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import Routes from './config/Routes';
-
+import ScrollToTop from './components/scroll/ScrollToTop';
 function App() {
     return (
         <BrowserRouter>
             <Route render={props => (
                 <>
+                <ScrollToTop/>
                     <Header {...props}/>
                     <Routes/>
                     <Footer/>
                 </>
             )}/>
         </BrowserRouter>
+
     );
 }
 

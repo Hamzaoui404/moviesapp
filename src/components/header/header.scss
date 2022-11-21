@@ -19,11 +19,9 @@
 
 .header {
     height: $header-height;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
     transition: height 0.3s ease, background-color 0.3s ease;
 
     &.shrink {
@@ -49,11 +47,10 @@
         }
 
         li {
-            padding: 5px 0;
+            padding: 10;
             font-weight: 700;
             position: relative;
             font-size: 1.5rem;
-
             &::after {
                 content: "";
                 position: absolute;
@@ -89,4 +86,7 @@
             }
         }
     }
+}
+.active a {
+color: red;
 }

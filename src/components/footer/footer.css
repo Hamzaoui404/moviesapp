@@ -1,0 +1,30 @@
+.logo{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.Footer_link_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Footer_list a {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid white;
+    width: fit-content;
+    border-radius: 8px;
+    font-weight: 700;
+    color: white;
+}
+.Footer_list a:hover {
+    background-color:#FFFAFA		;
+    color: black;
+    border: 3px solid black
+
+}
+.Footer_list{
+    margin: 0px 20px;
+}

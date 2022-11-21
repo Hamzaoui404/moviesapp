@@ -3,6 +3,7 @@
 button {
     cursor: pointer;
     font-family: $font-family;
+    
 }
 
 .btn {
@@ -32,12 +33,12 @@ button {
 
 .btn-outline:hover {
     box-shadow: unset;
-    color: $main-color;
-    background-color: $white;
+    color: black;
+    background-color: white;
 }
 
 .btn.small {
     border-width: 2px;
-    padding: 0.25rem 1.5rem;
+    padding: 1rem;
     font-size: 1rem;
 }
